@@ -19,10 +19,13 @@
 #define MAX(x, y) (x) > (y) ? (x) : (y)
 #endif
 
-#define GAP_OPEN -3.0
+
 #define GAP_CONT -3.0
 #define MATCH    2.0
+#define GAP_OPEN -3.0
 #define MISMATCH -3.0
+
+
 
 #define POLYA_MATCH    2.0
 #define POLYA_MISMATCH -3.0

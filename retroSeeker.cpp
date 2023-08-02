@@ -89,6 +89,10 @@ void identifyRetroGenes(parameter *paraInfo, FILE *genomefp, faidxMap &faiHash,
         break;
       }
 
+      if (startStr(line, "#")) {
+        continue;
+      }  
+
       // net line
       if (startStr(line, "net")) {
         if (chrom != NULL) {
@@ -505,7 +509,9 @@ int tsdSeeker (parameter *paraInfo, char *fillExtendSeq, char *tsd5Seq, char *ts
         fprintf(outfp, "%s\t", qSeq + tsdStart);
         fprintf(outfp, "%s\t", mSeq + tsdStart);
         fprintf(outfp, "%s\t", tSeq + tsdStart);
+
         if (polyaItem->polyaScore > 0) {
+          /*polyA_TSD3_dist = retroEleLen -  polyaItem->end - tsd3length;*/
           fprintf(outfp, "%d\t%d\t%d\t%d\t%s", polyaItem->start - trimNum,
                   polyaItem->end - trimNum, polyaItem->polyaLen,
                   polyaItem->polyaScore, polyaItem->polyaSeq);
@@ -529,6 +535,18 @@ int tsdSeeker (parameter *paraInfo, char *fillExtendSeq, char *tsd5Seq, char *ts
   safeFree(mSeq);
   safeFree(tSeq);
   return matNum;
+}
+
+
+int getTSDnum(char *seq) {
+  int i       = 0;
+  int baseNum = 0;
+  int seqLen  = strlen(seq);
+  for (i = 0; i < seqLen; i++) {
+    if (seq[i] != '-' && seq[i] != '.')
+      baseNum += 1;
+  }
+  return baseNum;
 }
 
 int get5pTrimNum(char *seq, int tsdOffset) {

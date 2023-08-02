@@ -270,7 +270,7 @@ int main(int argc, char **argv) {
 void usage(void) {
   fprintf(
       stderr, "%s",
-      "Usage:  retroSeeker2 [options] --fa <fasta file> --fai <fai file> --net <net file> --bed [bed file]\n\
+      "Usage:  retroSeeker [options] --fa <fasta file> --fai <fai file> --net <net file> --bed [bed file]\n\
 [options]\n\
 -f/--fa <file>      : genome file, fasta format [Required]\n\
 -F/--fai <file>     : fai file of genome, you can use samtools faidx to generate [Required]\n\
