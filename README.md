@@ -1,6 +1,6 @@
 # retroSeeker
 
-retroSeeker: A computational software for identifying retrotransposons from pairwise alignment data(.net).
+retroSeeker: a computational software for identifying retrotransposons from pairwise alignment data(.net).
 
 ## Input data:<BR>
 
