@@ -4,7 +4,7 @@ retroSeeker: a computational software for identifying retrotransposons from pair
 
 ## Input data:<BR>
 
-Pairwise alignment data (.net) can be download from UCSC: https://hgdownload.soe.ucsc.edu/downloads.html#human
+Pairwise alignment data (.net) can be download from UCSC: https://hgdownload.soe.ucsc.edu/downloads.html#human<BR>
 or customized by lastz software described in https://hgdownload.soe.ucsc.edu/goldenPath/hg38/vsMm10/
 
 Usage:<BR>
