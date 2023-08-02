@@ -282,10 +282,10 @@ void usage(void) {
 -V/--version        : retroSeeker version\n\
 -h/--help           : help informations\n\
 -S/--self           : self-chain net type. default is different normal-chain net\n\
--x/--RNA5endUp      : extend length of upStream of 5`-end of the RNA direction to search tsd [default=30]\n\
--y/--RNA5endDown    : extend length of dpStream of 3`-end of the RNA direction to search tsd [default=30]\n\
--z/--RNA3endUp      : extend length of upStream of 5`-end of the RNA direction to search tsd [default=30]\n\
--w/--RNA3endDown    : extend length of dpStream of 3`-end of the RNA direction to search tsd [default=30]\n\
+-x/--RNA5endUp      : extend length of upStream of 5'-end of the RNA direction to search tsd [default=30]\n\
+-y/--RNA5endDown    : extend length of dpStream of 3'-end of the RNA direction to search tsd [default=30]\n\
+-z/--RNA3endUp      : extend length of upStream of 5'-end of the RNA direction to search tsd [default=30]\n\
+-w/--RNA3endDown    : extend length of dpStream of 3'-end of the RNA direction to search tsd [default=30]\n\
 -m/--minMatchLen    : minimum TSD length [default>=5]\n\
 -M/--minPolyaLen    : minimum polya length [default>=5]\n\
 -P/--maxPolyaLen    : maximum polya length [default<=50]\n\
