@@ -63,7 +63,7 @@ chr1	53770991	53771163	retroSeeker_1	27	-	15	10	172	GCAAGGAGAAGGGCATACCCGTAGACCT
 
 ## How to cite:<BR>
 
-Huang J et.al, New retrotransposon classes and specificity revealed by retroSeeker, Advanced Biotechnology, 2023
+Huang J et.al, RetroSeeker Reveals Biogenesis, Expression, and Evolution of a Large Set of Novel Retrotransposons, Advanced Biotechnology, 2023
 
 
 Contact :<BR>
